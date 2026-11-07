@@ -434,7 +434,8 @@ function build(resetPos = true) {
 
   // Spot-Pool: wenige echte Spots folgen dem Besucher, alle anderen Bilder haben nur einen Lichtschein
   slots = [];
-  const cookie = high ? spotCookie() : null;
+  // iPhone/iPad erlauben nur 16 Texturen je Shader; 8 Schatten + 8 Cookies + Materialtexturen wären zu viel
+  const cookie = high && renderer.capabilities.maxTextures >= 24 ? spotCookie() : null;
   for (let i = 0; i < 8; i++) {
     const sp = new THREE.SpotLight(eve ? 0xffcf9e : 0xffe4c4, 0, 0, 0.42, 0.75, 2);
     if (high) {
