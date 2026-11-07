@@ -34,8 +34,9 @@ Update: neuen ZIP-Inhalt über den alten Ordner extrahieren (der Ordner `data` b
 
 ## Testseite (statische Demo)
 `npm run build:demo` baut aus `demo/` (24 Beispielfotos, 3 Räume) eine Seite in `demo-dist/`, die ohne Server läuft.
-Den Inhalt von `demo-dist/` in ein öffentliches Repo (z. B. `galerie-demo`) legen und dort unter Settings → Pages
-„Deploy from a branch“ → `main` / `(root)` wählen. Für ein claude.ai-Artifact: `npm run build:demo -- --artifact`.
+Bei jedem Push auf `main` baut GitHub die Seite automatisch und stellt sie über GitHub Pages bereit
+(`.github/workflows/pages.yml`; einmalig unter Settings → Pages → Source „GitHub Actions“ wählen).
+Für ein claude.ai-Artifact: `npm run build:demo -- --artifact`.
 Die Demo-Fotos sind Ausschnitte aus Poly-Haven-Panoramen (CC0).
 
 ## Quellen
