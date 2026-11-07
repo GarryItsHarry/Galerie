@@ -176,7 +176,9 @@ export function initViewer() {
   setupInput(canvas);
   setupDetail();
   setupBar();
-  canvas.addEventListener('pointerdown', () => { startAudio(); setSound(prefs.sound); setMusic(prefs.music); });
+  // Ton erst nach einer Geste; bei Touch zählt für Safari erst das Loslassen. Ganze Rundgang-Ansicht, damit auch der Joystick zählt.
+  const unlock = () => { startAudio(); setSound(prefs.sound); setMusic(prefs.music); };
+  for (const ev of ['pointerdown', 'pointerup']) $('view-tour').addEventListener(ev, unlock);
   (window as any).__galerie = { teleport: (x: number, z: number, y = 0, p = 0) => { pos.set(x, z); yaw = yawT = y; pitch = pitchT = p; vel.set(0, 0); }, pos: () => [pos.x, pos.y], audio: () => audioState(), quality: () => prefs.quality, spots: () => slots.map((s) => Math.round(s.sp.intensity * 10) / 10), figures: () => mixers.length };
 }
 

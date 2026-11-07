@@ -25,9 +25,11 @@ function impulse(sec: number) {
 
 /** Muss aus einer Nutzergeste heraus aufgerufen werden (Autoplay-Regel). */
 export function startAudio() {
-  if (ctx) { if (ctx.state === 'suspended') ctx.resume(); return; }
+  if (ctx) { if (ctx.state !== 'running') ctx.resume(); return; } // iOS meldet nach Anruf/App-Wechsel 'interrupted'
   const AC = window.AudioContext || (window as any).webkitAudioContext;
   if (!AC) return;
+  // iOS: sonst schaltet der Lautlos-Schalter die Seite stumm (Safari 17+); „Ton aus“ in der Leiste bleibt
+  if ('audioSession' in navigator) (navigator as any).audioSession.type = 'playback';
   ctx = new AC();
   master = ctx.createGain(); master.gain.value = enabled ? 0.6 : 0; master.connect(ctx.destination);
   dry = ctx.createGain(); dry.gain.value = 0.75; dry.connect(master);
