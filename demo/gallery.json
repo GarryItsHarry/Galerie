@@ -1,0 +1,704 @@
+{
+  "images": [
+    {
+      "id": "1824861849e44e69",
+      "name": "Feldweg unter Wolken.jpg",
+      "title": "Feldweg unter Wolken",
+      "caption": "",
+      "tags": [
+        "Land"
+      ],
+      "width": 2000,
+      "height": 1333,
+      "aspect": 1.5003750937734435
+    },
+    {
+      "id": "855fd01a6cc18bb2",
+      "name": "Weites Feld.jpg",
+      "title": "Weites Feld",
+      "caption": "",
+      "tags": [
+        "Land"
+      ],
+      "width": 2000,
+      "height": 1000,
+      "aspect": 2
+    },
+    {
+      "id": "cc4d1bd8fa91c7da",
+      "name": "Backstein und Wasser.jpg",
+      "title": "Backstein und Wasser",
+      "caption": "",
+      "tags": [
+        "Stadt"
+      ],
+      "width": 2000,
+      "height": 1333,
+      "aspect": 1.5003750937734435
+    },
+    {
+      "id": "6eaca94be9aec25c",
+      "name": "Campanile.jpg",
+      "title": "Campanile",
+      "caption": "",
+      "tags": [
+        "Stadt"
+      ],
+      "width": 1334,
+      "height": 2000,
+      "aspect": 0.667
+    },
+    {
+      "id": "1a7e4cfe955c0b2f",
+      "name": "Münster.jpg",
+      "title": "Münster",
+      "caption": "Ulm, Herbstmorgen. Der höchste Kirchturm der Welt.",
+      "tags": [
+        "Stadt"
+      ],
+      "width": 1334,
+      "height": 2000,
+      "aspect": 0.667
+    },
+    {
+      "id": "17dc47a1836dd570",
+      "name": "San Marco am Morgen.jpg",
+      "title": "San Marco am Morgen",
+      "caption": "",
+      "tags": [
+        "Stadt"
+      ],
+      "width": 2000,
+      "height": 1333,
+      "aspect": 1.5003750937734435
+    },
+    {
+      "id": "b38e2935ad374026",
+      "name": "Speicherstadt, Fleet.jpg",
+      "title": "Speicherstadt, Fleet",
+      "caption": "",
+      "tags": [
+        "Stadt"
+      ],
+      "width": 1334,
+      "height": 2000,
+      "aspect": 0.667
+    },
+    {
+      "id": "9b3232d9a6d5413f",
+      "name": "Stadthaus, Ulm.jpg",
+      "title": "Stadthaus, Ulm",
+      "caption": "",
+      "tags": [
+        "Stadt"
+      ],
+      "width": 2000,
+      "height": 1333,
+      "aspect": 1.5003750937734435
+    },
+    {
+      "id": "9ca08ac133e7b0db",
+      "name": "Villa am Ufer.jpg",
+      "title": "Villa am Ufer",
+      "caption": "",
+      "tags": [
+        "Stadt"
+      ],
+      "width": 1500,
+      "height": 2000,
+      "aspect": 0.75
+    },
+    {
+      "id": "cbd3e92c943ca8ab",
+      "name": "Kiefern im Nebel.jpg",
+      "title": "Kiefern im Nebel",
+      "caption": "",
+      "tags": [
+        "Wald"
+      ],
+      "width": 1334,
+      "height": 2000,
+      "aspect": 0.667
+    },
+    {
+      "id": "33862a36d23dea9a",
+      "name": "Moos und Licht.jpg",
+      "title": "Moos und Licht",
+      "caption": "",
+      "tags": [
+        "Wald"
+      ],
+      "width": 2000,
+      "height": 2000,
+      "aspect": 1
+    },
+    {
+      "id": "c2128003cdead661",
+      "name": "Nebelwald.jpg",
+      "title": "Nebelwald",
+      "caption": "",
+      "tags": [
+        "Wald"
+      ],
+      "width": 2000,
+      "height": 1333,
+      "aspect": 1.5003750937734435
+    },
+    {
+      "id": "e50a4d9bf41c213d",
+      "name": "Urwaldpfad.jpg",
+      "title": "Urwaldpfad",
+      "caption": "",
+      "tags": [
+        "Wald"
+      ],
+      "width": 2000,
+      "height": 1333,
+      "aspect": 1.5003750937734435
+    },
+    {
+      "id": "2907ef7166fceaa8",
+      "name": "Verschneite Allee.jpg",
+      "title": "Verschneite Allee",
+      "caption": "",
+      "tags": [
+        "Wald"
+      ],
+      "width": 2000,
+      "height": 1333,
+      "aspect": 1.5003750937734435
+    },
+    {
+      "id": "b1920c0d12d9676e",
+      "name": "Waldweg.jpg",
+      "title": "Waldweg",
+      "caption": "",
+      "tags": [
+        "Wald"
+      ],
+      "width": 2000,
+      "height": 2000,
+      "aspect": 1
+    },
+    {
+      "id": "5e0bdf42a7d4e425",
+      "name": "Winterwald.jpg",
+      "title": "Winterwald",
+      "caption": "",
+      "tags": [
+        "Wald"
+      ],
+      "width": 1334,
+      "height": 2000,
+      "aspect": 0.667
+    },
+    {
+      "id": "9ccc0324a8854b94",
+      "name": "Bachlauf im Sommer.jpg",
+      "title": "Bachlauf im Sommer",
+      "caption": "",
+      "tags": [
+        "Wasser"
+      ],
+      "width": 2000,
+      "height": 1333,
+      "aspect": 1.5003750937734435
+    },
+    {
+      "id": "beee5e6339e9a36c",
+      "name": "Felsen am Bach.jpg",
+      "title": "Felsen am Bach",
+      "caption": "",
+      "tags": [
+        "Wasser"
+      ],
+      "width": 1600,
+      "height": 2000,
+      "aspect": 0.8
+    },
+    {
+      "id": "1ecbe1c7b0387b71",
+      "name": "Granitbucht.jpg",
+      "title": "Granitbucht",
+      "caption": "",
+      "tags": [
+        "Wasser"
+      ],
+      "width": 2000,
+      "height": 1333,
+      "aspect": 1.5003750937734435
+    },
+    {
+      "id": "766ed0c8a7cbb7d8",
+      "name": "Lagune bei Sonnenuntergang.jpg",
+      "title": "Lagune bei Sonnenuntergang",
+      "caption": "",
+      "tags": [
+        "Wasser"
+      ],
+      "width": 2000,
+      "height": 1000,
+      "aspect": 2
+    },
+    {
+      "id": "7487ed5fb70404e5",
+      "name": "Morgen am See.jpg",
+      "title": "Morgen am See",
+      "caption": "Kurz vor Sonnenaufgang, Stille über dem Wasser.",
+      "tags": [
+        "Wasser"
+      ],
+      "width": 2000,
+      "height": 909,
+      "aspect": 2.2002200220022003
+    },
+    {
+      "id": "072fb279888698ea",
+      "name": "Stille Bucht.jpg",
+      "title": "Stille Bucht",
+      "caption": "",
+      "tags": [
+        "Wasser"
+      ],
+      "width": 2000,
+      "height": 1504,
+      "aspect": 1.3297872340425532
+    },
+    {
+      "id": "40428d5058624784",
+      "name": "Strandgras.jpg",
+      "title": "Strandgras",
+      "caption": "",
+      "tags": [
+        "Wasser"
+      ],
+      "width": 2000,
+      "height": 2000,
+      "aspect": 1
+    },
+    {
+      "id": "ac4ff529f5b02eb0",
+      "name": "Verborgener Wasserfall.jpg",
+      "title": "Verborgener Wasserfall",
+      "caption": "",
+      "tags": [
+        "Wasser"
+      ],
+      "width": 2000,
+      "height": 1333,
+      "aspect": 1.5003750937734435
+    }
+  ],
+  "rooms": [
+    {
+      "id": "ddrpjj3u",
+      "name": "Licht und Raum",
+      "tag": "",
+      "height": 3.2,
+      "pts": [
+        [
+          0,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          0,
+          6
+        ]
+      ],
+      "doors": [
+        {
+          "edge": 1,
+          "t": 3,
+          "w": 1.4
+        }
+      ],
+      "windows": [
+        {
+          "edge": 3,
+          "t": 3,
+          "w": 1.6
+        },
+        {
+          "edge": 0,
+          "t": 4,
+          "w": 1.6
+        }
+      ],
+      "intro": "Die Arbeiten in diesem Raum entstanden zwischen 2019 und 2024. Sie zeigen Landschaften im Übergang zwischen Tag und Nacht, wenn Farben sich auflösen und Formen zu Flächen werden."
+    },
+    {
+      "id": "4w0adofu",
+      "name": "Städte",
+      "tag": "Stadt",
+      "height": 3.2,
+      "pts": [
+        [
+          8,
+          0
+        ],
+        [
+          15,
+          0
+        ],
+        [
+          15,
+          6
+        ],
+        [
+          8,
+          6
+        ]
+      ],
+      "doors": [
+        {
+          "edge": 3,
+          "t": 3,
+          "w": 1.4
+        },
+        {
+          "edge": 2,
+          "t": 3.5,
+          "w": 1.4
+        }
+      ],
+      "windows": [],
+      "wall": "#ece6dc"
+    },
+    {
+      "id": "bxz3metf",
+      "name": "Wald und Wasser",
+      "tag": "",
+      "height": 3.2,
+      "pts": [
+        [
+          8,
+          6
+        ],
+        [
+          15,
+          6
+        ],
+        [
+          15,
+          15
+        ],
+        [
+          8,
+          15
+        ]
+      ],
+      "doors": [
+        {
+          "edge": 0,
+          "t": 3.5,
+          "w": 1.4
+        }
+      ],
+      "windows": [
+        {
+          "edge": 1,
+          "t": 3,
+          "w": 1.6
+        }
+      ],
+      "floor": "oak",
+      "frame": "wide"
+    }
+  ],
+  "placements": [
+    {
+      "id": "tle1529e",
+      "imageId": "cc4d1bd8fa91c7da",
+      "roomId": "4w0adofu",
+      "edge": 0,
+      "s": 1.665,
+      "y": 1.55,
+      "w": 1.2
+    },
+    {
+      "id": "ojdpjo6o",
+      "imageId": "17dc47a1836dd570",
+      "roomId": "4w0adofu",
+      "edge": 0,
+      "s": 3.5,
+      "y": 1.55,
+      "w": 1.2,
+      "rope": true
+    },
+    {
+      "id": "p3e1emdx",
+      "imageId": "9b3232d9a6d5413f",
+      "roomId": "4w0adofu",
+      "edge": 0,
+      "s": 5.335,
+      "y": 1.55,
+      "w": 1.2
+    },
+    {
+      "id": "6wcdjuci",
+      "imageId": "6eaca94be9aec25c",
+      "roomId": "4w0adofu",
+      "edge": 1,
+      "s": 2.0099333333333336,
+      "y": 1.55,
+      "w": 0.8004
+    },
+    {
+      "id": "w4jbbo9k",
+      "imageId": "1a7e4cfe955c0b2f",
+      "roomId": "4w0adofu",
+      "edge": 1,
+      "s": 3.990066666666667,
+      "y": 1.55,
+      "w": 0.8004
+    },
+    {
+      "id": "0g70w83y",
+      "imageId": "b38e2935ad374026",
+      "roomId": "4w0adofu",
+      "edge": 2,
+      "s": 1.45,
+      "y": 1.55,
+      "w": 0.8004
+    },
+    {
+      "id": "7uergbj4",
+      "imageId": "9ca08ac133e7b0db",
+      "roomId": "4w0adofu",
+      "edge": 2,
+      "s": 5.550000000000001,
+      "y": 1.55,
+      "w": 0.8999999999999999
+    },
+    {
+      "id": "uj390ql6",
+      "imageId": "1824861849e44e69",
+      "roomId": "ddrpjj3u",
+      "edge": 0,
+      "s": 1.6500000000000001,
+      "y": 1.55,
+      "w": 1.2
+    },
+    {
+      "id": "wakzbyvr",
+      "imageId": "855fd01a6cc18bb2",
+      "roomId": "ddrpjj3u",
+      "edge": 0,
+      "s": 6.35,
+      "y": 1.55,
+      "w": 1.2
+    },
+    {
+      "id": "sxvcldas",
+      "imageId": "c2128003cdead661",
+      "roomId": "ddrpjj3u",
+      "edge": 1,
+      "s": 1.2,
+      "y": 1.55,
+      "w": 1.2
+    },
+    {
+      "id": "6bdnb71t",
+      "imageId": "e50a4d9bf41c213d",
+      "roomId": "ddrpjj3u",
+      "edge": 1,
+      "s": 4.800000000000001,
+      "y": 1.55,
+      "w": 1.2
+    },
+    {
+      "id": "fjfza46o",
+      "imageId": "2907ef7166fceaa8",
+      "roomId": "ddrpjj3u",
+      "edge": 2,
+      "s": 1.915,
+      "y": 1.55,
+      "w": 1.2
+    },
+    {
+      "id": "f9ygxpm1",
+      "imageId": "33862a36d23dea9a",
+      "roomId": "ddrpjj3u",
+      "edge": 2,
+      "s": 4,
+      "y": 1.55,
+      "w": 1.2
+    },
+    {
+      "id": "d23y50ny",
+      "imageId": "b1920c0d12d9676e",
+      "roomId": "ddrpjj3u",
+      "edge": 2,
+      "s": 6.085,
+      "y": 1.55,
+      "w": 1.2
+    },
+    {
+      "id": "5usoaci0",
+      "imageId": "cbd3e92c943ca8ab",
+      "roomId": "bxz3metf",
+      "edge": 0,
+      "s": 1.45,
+      "y": 1.55,
+      "w": 0.8004
+    },
+    {
+      "id": "2r7gg31b",
+      "imageId": "5e0bdf42a7d4e425",
+      "roomId": "bxz3metf",
+      "edge": 0,
+      "s": 5.550000000000001,
+      "y": 1.55,
+      "w": 0.8004
+    },
+    {
+      "id": "by093il1",
+      "imageId": "beee5e6339e9a36c",
+      "roomId": "bxz3metf",
+      "edge": 1,
+      "s": 1.1500000000000001,
+      "y": 1.55,
+      "w": 0.96
+    },
+    {
+      "id": "j0nhck6f",
+      "imageId": "9ccc0324a8854b94",
+      "roomId": "bxz3metf",
+      "edge": 1,
+      "s": 5.41,
+      "y": 1.55,
+      "w": 1.2
+    },
+    {
+      "id": "evcsoprp",
+      "imageId": "1ecbe1c7b0387b71",
+      "roomId": "bxz3metf",
+      "edge": 1,
+      "s": 7.29,
+      "y": 1.55,
+      "w": 1.2
+    },
+    {
+      "id": "98ysnj3m",
+      "imageId": "766ed0c8a7cbb7d8",
+      "roomId": "bxz3metf",
+      "edge": 2,
+      "s": 2.2800000000000002,
+      "y": 1.55,
+      "w": 1.2
+    },
+    {
+      "id": "m8getdb4",
+      "imageId": "7487ed5fb70404e5",
+      "roomId": "bxz3metf",
+      "edge": 2,
+      "s": 4.72,
+      "y": 1.55,
+      "w": 1.2
+    },
+    {
+      "id": "mkggi9dw",
+      "imageId": "072fb279888698ea",
+      "roomId": "bxz3metf",
+      "edge": 3,
+      "s": 3.2800000000000002,
+      "y": 1.55,
+      "w": 1.2
+    },
+    {
+      "id": "ffsouim3",
+      "imageId": "ac4ff529f5b02eb0",
+      "roomId": "bxz3metf",
+      "edge": 3,
+      "s": 5.720000000000001,
+      "y": 1.55,
+      "w": 1.2
+    },
+    {
+      "id": "dmqn0g2p",
+      "imageId": "40428d5058624784",
+      "roomId": "bxz3metf~sw",
+      "edge": 0,
+      "s": 2.0250000000000004,
+      "y": 1.55,
+      "w": 1.2
+    }
+  ],
+  "benches": [
+    {
+      "id": "myozez0u",
+      "x": 4,
+      "y": 3.5,
+      "rot": 0,
+      "len": 1.8,
+      "layout": "parallel"
+    },
+    {
+      "id": "tffpvxac",
+      "x": 11.5,
+      "y": 3,
+      "rot": 0,
+      "len": 1.8
+    },
+    {
+      "id": "l6u7o3e0",
+      "x": 11.5,
+      "y": 9.5,
+      "rot": 0.7853981633974483,
+      "len": 1.8
+    }
+  ],
+  "objects": [
+    {
+      "id": "o1",
+      "kind": "vitrine",
+      "x": 6.3,
+      "y": 4.7,
+      "rot": 0,
+      "item": "camera"
+    },
+    {
+      "id": "o2",
+      "kind": "pedestal",
+      "x": 1.5,
+      "y": 4.6,
+      "rot": 0,
+      "item": "videocam"
+    },
+    {
+      "id": "o3",
+      "kind": "pedestal",
+      "x": 1.5,
+      "y": 2,
+      "rot": 0.3,
+      "item": "books",
+      "imageId": "c2128003cdead661"
+    },
+    {
+      "id": "o4",
+      "kind": "vitrine",
+      "x": 6.2,
+      "y": 2.2,
+      "rot": 0,
+      "item": "print",
+      "imageId": "9ca08ac133e7b0db"
+    },
+    {
+      "id": "o5",
+      "kind": "counter",
+      "x": 11.5,
+      "y": 1.2,
+      "rot": 0,
+      "item": "none",
+      "imageId": "7487ed5fb70404e5"
+    }
+  ]
+}

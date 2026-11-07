@@ -1,0 +1,11 @@
+# QNAP Container Station: Ordner "galerie" liegt im Freigabeordner "Container" (/share/Container/galerie)
+services:
+  galerie:
+    build: /share/Container/galerie
+    image: galerie:latest
+    container_name: galerie
+    ports:
+      - "3000:3000"
+    volumes:
+      - /share/Container/galerie/data:/data   # Fotos, Vorschauen und gallery.json – diesen Ordner sichern
+    restart: unless-stopped

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Galerie</title>
+</head>
+<body>
+  <header id="top">
+    <strong class="brand">Galerie</strong>
+    <nav>
+      <button data-view="library" class="active">1 · Bilder</button>
+      <button data-view="editor">2 · Räume &amp; Wände</button>
+      <button data-view="tour">3 · Rundgang</button>
+    </nav>
+    <span id="status"></span>
+  </header>
+
+  <main>
+    <section id="view-library">
+      <aside class="side">
+        <div id="drop" class="drop">
+          <p><strong>Bilder hierher ziehen</strong><br />oder klicken zum Auswählen</p>
+          <input id="file" type="file" accept="image/*" multiple hidden />
+        </div>
+        <label>Tags für den Upload (Komma getrennt)
+          <input id="up-tags" placeholder="z. B. Landschaft, Berge" />
+        </label>
+        <div id="progress" class="progress" hidden><div></div><span></span></div>
+        <hr />
+        <div class="row">
+          <button id="sel-all">Alle wählen</button>
+          <button id="sel-none">Keine</button>
+        </div>
+        <div id="edit-panel"></div>
+      </aside>
+      <div class="content">
+        <div class="filters">
+          <span>Format:</span>
+          <select id="f-format">
+            <option value="">Alle</option><option value="land">Quer</option>
+            <option value="port">Hoch</option><option value="sq">Quadrat</option>
+          </select>
+          <span>Tag:</span>
+          <select id="f-tag"><option value="">Alle</option></select>
+          <span id="count"></span>
+        </div>
+        <div id="grid" class="grid"></div>
+      </div>
+    </section>
+
+    <section id="view-editor" hidden>
+      <aside class="side">
+        <div class="tools" id="tools">
+          <button data-tool="select" class="active" title="Auswählen &amp; verschieben">Auswahl</button>
+          <button data-tool="rect" title="Rechteckigen Raum aufziehen">Raum ▭</button>
+          <button data-tool="poly" title="Beliebigen Grundriss klicken">Raum ⬠</button>
+          <button data-tool="door" title="Tür in Wand setzen/entfernen">Tür</button>
+          <button data-tool="window" title="Fenster mit Tageslicht">Fenster</button>
+          <button data-tool="bench" title="Bank aufstellen">Bank</button>
+          <button data-tool="object" title="Sockel, Vitrine oder Empfangstresen aufstellen">Objekt</button>
+          <button data-tool="place" title="Gewähltes Bild an eine Wand hängen">Bild hängen</button>
+        </div>
+        <p id="tool-hint" class="hint"></p>
+        <div id="room-panel"></div>
+        <hr />
+        <h4>Automatisch verteilen</h4>
+        <label>Bildgröße (lange Seite)
+          <select id="lay-size">
+            <option value="0.8">klein · 0,8 m</option>
+            <option value="1.2" selected>mittel · 1,2 m</option>
+            <option value="1.7">groß · 1,7 m</option>
+          </select>
+        </label>
+        <label>Hängung
+          <select id="lay-mode">
+            <option value="row">Reihe · ein Bild neben dem anderen</option>
+            <option value="salon">Gruppen · Petersburger Hängung</option>
+          </select>
+        </label>
+        <div class="row">
+          <button id="lay-all" class="primary">Alle neu verteilen</button>
+          <button id="lay-rest">Fehlende ergänzen</button>
+        </div>
+        <p id="lay-msg" class="hint"></p>
+        <hr />
+        <h4>Noch nicht aufgehängt</h4>
+        <div id="unplaced" class="mini-grid"></div>
+        <div id="pl-panel"></div>
+      </aside>
+      <div class="content canvas-wrap">
+        <canvas id="plan"></canvas>
+        <div class="plan-help">Mausrad: Zoom · Rechte Maustaste / Leertaste ziehen: Verschieben · Entf: Löschen</div>
+      </div>
+    </section>
+
+    <section id="view-tour" hidden>
+      <canvas id="three"></canvas>
+      <canvas id="minimap" width="180" height="180"></canvas>
+      <div id="tour-hint" class="tour-hint">Klicken &amp; ziehen zum Umschauen · Klick zum Loslaufen (WASD, Shift = schneller) · Bild anklicken</div>
+      <div id="tour-bar">
+        <button id="q-btn">Qualität</button>
+        <button id="snd-btn">Ton</button>
+        <button id="bob-btn">Gehwippen</button>
+        <button id="time-btn">Abend</button>
+        <button id="mus-btn">Musik</button>
+        <button id="fig-btn">Besucher</button>
+      </div>
+      <div id="joy" hidden><div></div></div>
+      <div id="catalog" hidden>
+        <button id="c-close" aria-label="Katalog schließen">×</button>
+        <button id="c-prev" aria-label="Zurückblättern">‹</button>
+        <button id="c-next" aria-label="Weiterblättern">›</button>
+        <div id="c-book"></div>
+        <p id="c-hint">Seite anklicken oder an der Ecke ziehen · Pfeiltasten blättern · Esc schließt</p>
+      </div>
+      <div id="detail" hidden>
+        <button id="d-close" aria-label="Schließen">×</button>
+        <button id="d-prev" aria-label="Zurück">‹</button>
+        <button id="d-next" aria-label="Weiter">›</button>
+        <div id="d-stage"><img id="d-img" alt="" draggable="false" /></div>
+        <div id="d-info"><strong id="d-title"></strong><span id="d-cap"></span><span id="d-tags"></span></div>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
