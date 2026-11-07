@@ -41,7 +41,10 @@ Die Demo-Fotos sind Ausschnitte aus Poly-Haven-Panoramen (CC0).
 ## Quellen
 Texturen, Panorama und Modelle stammen von [Poly Haven](https://polyhaven.com) und sind CC0 (gemeinfrei):
 - Texturen: `concrete_floor_worn_001`, `hangar_concrete_floor`, `wood_floor`, `plaster_grey_04` (1K) in `web/public/textures/`
-- Panorama: `meadow` (verkleinert auf 4096×2048) als `web/public/textures/meadow.jpg`
+- Panoramen: `meadow` (Tag) und `belfast_sunset` (Abend), verkleinert, als `web/public/textures/meadow.jpg` bzw. `evening.jpg`
+- Demo-Fotos in `demo/`: Ausschnitte aus den Poly-Haven-Panoramen `blue_grotto`, `hamburg_canal`, `lakeside_dawn`, `lauter_waterfall`, `misty_pines`, `mossy_forest`, `piazza_san_marco`, `secluded_beach`, `snowy_forest_path_01`, `sunflowers`, `ulmer_muenster`, `venice_sunset`
 - Modelle: `potted_plant_01`, `potted_plant_02`, `korean_fire_extinguisher_01`, `Ottoman_01` (als Bank gestreckt), `Camera_01`, `vintage_video_camera`, `postcard_set_01` (glTF 1K) in `web/public/models/`
 - Besucherfiguren: KayKit Mannequin und Idle-Animationen von Kay Lousberg (CC0) in `web/public/models/kaykit/`
-- Katalog-Blätteranimation: [page-flip](https://github.com/Nodlik/StPageFlip) (MIT)
+- Katalog-Blätteranimation: [page-flip](https://github.com/Nodlik/StPageFlip) (MIT), 3D: [three.js](https://threejs.org) (MIT).
+  Beide sind im Browser-Code gebündelt; ihre Lizenztexte liegen in `web/public/THIRD_PARTY_LICENSES.txt` und werden mit ausgeliefert.
+- Server: Express, Multer (MIT), sharp (Apache-2.0, nutzt libvips unter LGPL-3.0 – wird erst beim Docker-Bau geladen, nicht im Repo)
