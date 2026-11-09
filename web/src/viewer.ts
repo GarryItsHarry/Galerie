@@ -179,7 +179,7 @@ export function initViewer() {
   // Ton erst nach einer Geste; bei Touch zählt für Safari erst das Loslassen. Ganze Rundgang-Ansicht, damit auch der Joystick zählt.
   const unlock = () => { startAudio(); setSound(prefs.sound); setMusic(prefs.music); };
   for (const ev of ['pointerdown', 'pointerup']) $('view-tour').addEventListener(ev, unlock);
-  (window as any).__galerie = { teleport: (x: number, z: number, y = 0, p = 0) => { pos.set(x, z); yaw = yawT = y; pitch = pitchT = p; vel.set(0, 0); }, pos: () => [pos.x, pos.y], audio: () => audioState(), quality: () => prefs.quality, spots: () => slots.map((s) => Math.round(s.sp.intensity * 10) / 10), figures: () => mixers.length };
+  (window as any).__galerie = { teleport: (x: number, z: number, y = 0, p = 0) => { pos.set(x, z); yaw = yawT = y; pitch = pitchT = p; vel.set(0, 0); }, pos: () => [pos.x, pos.y], audio: () => audioState(), quality: () => prefs.quality, spots: () => slots.map((s) => Math.round(s.sp.intensity * 10) / 10), figures: () => mixers.length, colliders: () => colliders };
 }
 
 function resize() {
@@ -519,7 +519,13 @@ function build(resetPos = true) {
   // Startposition
   const r0 = G.rooms[0];
   if (r0 && resetPos) {
-    const ip = interiorPoint(r0.pts); pos.set(ip[0], ip[1]); vel.set(0, 0);
+    // Raummitte, außer dort steht etwas (Bank, Sockel …): dann der nächste freie Rasterpunkt, sonst sitzt man im Objekt fest
+    const ip = interiorPoint(r0.pts), xs0 = r0.pts.map((q) => q[0]), ys0 = r0.pts.map((q) => q[1]);
+    const free = ([x, z]: [number, number]) => pointInPoly(x, z, r0.pts) && colliders.every(([ax, ay, bx, by]) => distToSegment(x, z, ax, ay, bx, by).d >= RADIUS + 0.15);
+    const grid: [number, number][] = [];
+    for (let x = Math.min(...xs0); x <= Math.max(...xs0); x += 0.25) for (let z = Math.min(...ys0); z <= Math.max(...ys0); z += 0.25) grid.push([x, z]);
+    const sp = free(ip) ? ip : grid.filter(free).sort((a, b) => Math.hypot(a[0] - ip[0], a[1] - ip[1]) - Math.hypot(b[0] - ip[0], b[1] - ip[1]))[0] || ip;
+    pos.set(sp[0], sp[1]); vel.set(0, 0);
     const first = paints.find((q) => q.p.roomId === r0.id) || paints[0];
     yaw = yawT = first ? Math.atan2(-(first.at.x - pos.x), -(first.at.z - pos.y)) : 0; pitch = pitchT = 0;
   }
