@@ -532,7 +532,7 @@ function build(resetPos = true) {
 }
 
 // ---------- Ausstattung: Pflanzen, Feuerlöscher (Poly Haven, CC0), Notausgang-Schild ----------
-const MODELS = { plant1: 'potted_plant_01', plant2: 'potted_plant_02', ext: 'korean_fire_extinguisher_01', bench: 'Ottoman_01', camera: 'Camera_01', videocam: 'vintage_video_camera', postcards: 'postcard_set_01' } as const;
+const MODELS = { plant: 'potted_plant_02', ext: 'korean_fire_extinguisher_01', bench: 'Ottoman_01', camera: 'Camera_01', videocam: 'vintage_video_camera', postcards: 'postcard_set_01' } as const;
 let modelsReady: Promise<Record<keyof typeof MODELS, THREE.Object3D>> | null = null;
 let mixers: THREE.AnimationMixer[] = [];
 let figuresReady: Promise<{ body: THREE.Object3D; clips: THREE.AnimationClip[] }> | null = null;
@@ -655,7 +655,7 @@ function placeProps(w: THREE.Group, high: boolean) {
         const x = b.ax + (bx / bl) * 0.6, z = b.ay + (bz / bl) * 0.6;
         if (!pointInPoly(x, z, r.pts) || busy(r, i, 0, 1) || busy(r, (i + n - 1) % n, a.len, 1)) continue;
         if ((G.benches || []).some((q) => benchSeats(q, G.rooms).some(([qx, qy]) => Math.hypot(qx - x, qy - z) < q.len / 2 + 0.6))) continue;
-        put(ri % 2 ? M.plant2 : M.plant1, x, z, ri);
+        put(M.plant, x, z, ri * 2.1); // gedreht, damit die Pflanzen nicht gleich aussehen
         break;
       }
       // Feuerlöscher neben der ersten Tür

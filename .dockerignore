@@ -2,3 +2,6 @@ node_modules
 dist
 data
 .git
+demo
+demo-dist
+.github

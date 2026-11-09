@@ -44,7 +44,7 @@ Texturen, Panorama und Modelle stammen von [Poly Haven](https://polyhaven.com) u
 - Texturen: `concrete_floor_worn_001`, `hangar_concrete_floor`, `wood_floor`, `plaster_grey_04` (1K) in `web/public/textures/`
 - Panoramen: `meadow` (Tag) und `belfast_sunset` (Abend), verkleinert, als `web/public/textures/meadow.jpg` bzw. `evening.jpg`
 - Demo-Fotos in `demo/`: Ausschnitte aus den Poly-Haven-Panoramen `blue_grotto`, `hamburg_canal`, `lakeside_dawn`, `lauter_waterfall`, `misty_pines`, `mossy_forest`, `piazza_san_marco`, `secluded_beach`, `snowy_forest_path_01`, `sunflowers`, `ulmer_muenster`, `venice_sunset`
-- Modelle: `potted_plant_01`, `potted_plant_02`, `korean_fire_extinguisher_01`, `Ottoman_01` (als Bank gestreckt), `Camera_01`, `vintage_video_camera`, `postcard_set_01` (glTF 1K) in `web/public/models/`
+- Modelle: `potted_plant_02`, `korean_fire_extinguisher_01`, `Ottoman_01` (als Bank gestreckt), `Camera_01`, `vintage_video_camera`, `postcard_set_01` (glTF 1K) in `web/public/models/`
 - Besucherfiguren: KayKit Mannequin und Idle-Animationen von Kay Lousberg (CC0) in `web/public/models/kaykit/`
 - Katalog-Blätteranimation: [page-flip](https://github.com/Nodlik/StPageFlip) (MIT), 3D: [three.js](https://threejs.org) (MIT).
   Beide sind im Browser-Code gebündelt; ihre Lizenztexte liegen in `web/public/THIRD_PARTY_LICENSES.txt` und werden mit ausgeliefert.
